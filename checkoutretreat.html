@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/ktx2bep.css">
+
+    <title>CHECK OUT</title>
+
+<!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+<!--  JavaScript  -->
+    <script src="script.js" defer></script>
+
+<!--  JQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+
+<body class="containerRT">
+  <!--  HEADER  -->
+
+    <div grid-row="" grid-pad="1.5" grid-gutter="3" grid-responsive="">
+	<div grid-col="H" grid-pad="1.5" class="nav"><a href = "home.html" class="backhome">LIKETOURIST.COM</a></div>
+	<div grid-col="H" grid-pad="1.5" class="nav">EMBRACE THE EXTRAORDINARY:<br> YOUR ESCAPE FROM ORDINARY BEGINS HERE!</div>
+	<div grid-col="H" grid-pad="1.5" class="nav">CRAFT YOUR DREAM GETAWAY.<br> ADD TO THE CART YOUR PERFECT HOLIDAY.</div>
+	<div grid-col="D" grid-pad="1.5" class="nav">CART(<span id="itemCount"></span>)</div>
+	<div grid-col="R" grid-pad="1.5" class="checkout">CHECKOUT</div>
+    </div>
+
+<!--  The Last Chance -->
+
+    <div grid-row="BOOKING" grid-pad="1.5" grid-gutter="3" grid-responsive="">
+    <div grid-col="Check" class="titolo" style="color:red;">THANKS FOR BOOKING WITH US!</div>
+  </div>
+
+      <div class="wrapper">
+      <div class="contentDV" role="main">
+
+
+  <img src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/retreat-postcard.png?v=1694529366197" class="postcardRetreat">
+        <img src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/RECEIPT_RET.png?v=1694363004010" class="receiptRetreat">
+
+        <div>
+          <button class="PrintButtonRT" onclick="printReceipt()"	><div class="Print" style="color:red;">PRINT RECEIPT</div></button>
+        <button class="RefundButtonRT" id="RefundButtonRT"><div class="Print" style="color:red;">ASK FOR REFUND</div></button>
+
+        <div id="refund" class="refund">  <span id="closeAboutButton" class="closeAboutButton">CLOSE</span>
+
+       <div class="refund-content"> REFUND POLICY <br><br> At LIKETOURIST.COM, we are committed to providing our customers with the best possible shopping experience.
+We understand that sometimes you may not be entirely satisfied with your purchase. Unfortunately, we must inform you that under normal circumstances, we do not offer refunds on any purchases made through our website. This policy is in place due to various factors, including the nature of our products and our commitment to maintaining competitive pricing.
+       </div></div>
+        </div>
+       </div></div>
+
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+<footer class="footer">
+      <div grid-row="FOOT" grid-pad="3" grid-gutter="3" grid-responsive="">
+      <div grid-col="3" grid-pad="3" class="instructions">HOW TO USE THE PLATFORM:</div>
+	    <div grid-col="4" grid-pad="3" class="instructions">1.SELECT YOUR TRAVEL DESTINATION &#8198;&#8198;&#8198;&#8198;&#8198; 2.ADD FOUR ITEMS MIN. TO THE CART &#8198;&#8198;&#8198;&#8198;&#8198;3.GO TO THE CHECK OUT
+        &#8198;&#8198;&#8198;&#8198;&#8198;4.PRINT YOUR RECEIPT&#8198;&#8198;&#8198;&#8198;&#8198; 5.TAKE HOME A SOUVENIR</div>
+      </div>
+</footer>
+
+<script type="text/javascript">
+	function printReceipt(){
+    console.log("ciao")
+		fetch('./print2.php').then(function(response) {
+		    return response.text().then(function(text) {
+		        console.log(text);
+		    });
+		});
+
+    window.open ("index.html","mywindow")
+	}
+  </script>
+  </body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+  <link rel="stylesheet" href="https://use.typekit.net/ktx2bep.css">
+
+  <title>LA DOLCE VITA</title>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--  JavaScript  -->
+  <script src="script.js" defer></script>
+
+  <!--  JQuery  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--  p5  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+
+</head>
+
+<body>
+  <!--MOUSE-->
+    <div class="follower"></div>
+  <!--  HEADER  -->
+  <div grid-row="" grid-pad="1.5" grid-gutter="3" grid-responsive="">
+    <div grid-col="H" grid-pad="1.5" class="nav"><a href="home.html" class="backhome">LIKETOURIST.COM</a></div>
+    <div grid-col="H" grid-pad="1.5" class="nav">EMBRACE THE EXTRAORDINARY:<br> YOUR ESCAPE FROM ORDINARY BEGINS HERE!
+    </div>
+    <div grid-col="H" grid-pad="1.5" class="nav">CRAFT YOUR DREAM GETAWAY.<br> ADD TO THE CART YOUR PERFECT HOLIDAY.
+    </div>
+    <div grid-col="D" grid-pad="1.5" class="nav">CART(<span id="itemCount"></span>)</div>
+    <div grid-col="R" grid-pad="1.5" class="checkout"><a href="checkoutdolcevita.html" style="display:none;" class="blink">CHECKOUT</a></div>
+  </div>
+
+  <!--  LA DOLCE VITA  -->
+  <div grid-row="1" grid-pad="1.5" grid-gutter="3" grid-responsive="">
+    <div grid-col="1" class=></div>
+    <div grid-col="1.5" class="titolo">La Dolce Vita</div>
+  </div>
+
+
+    <div class="wrapper">
+      <div class="content" role="main">
+
+        <!--  REVIEWS ACCOMODATION-->
+
+        <div grid-row="A" grid-pad="1.5" grid-gutter="3" grid-responsive="">
+          <div grid-col="2" grid-pad="1.5" class="Sidenav">RESERVE AN ACCOMODATION:</div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><img class="star"
+                src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-4.png?v=1693998230684"><br><span
+                class="reviewTitle">PALAZZO ANSELMO.</span> Live a unique experience in an oasis of peace and
+              tranquility
+              in the heart of Rome. Located in a bourgeois building from the late 19th century, newly renovated, the
+              structure offers many services: a spacious room, a restaurant and bar on a magnificent panoramic rooftop.
+            </div>
+
+            <div class="overlayNights hidden item">
+              <div class="question" style="display: inline-block">How many nights are you staying?<br><br></div>
+              <div style="display: inline-flex">
+                <span class="nightsMinus">-</span> <span class="nightsNum">0</span> <span class="nightsPlus">+</span>
+              </div>
+            </div>
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Benefit from our amenities<br><br></div>
+              <div class="services-list"><span>swimming pool</span></div>
+              <div class="services-list"><span>spa</span></div>
+              <div class="services-list"><span>fitness center</span></div>
+              <div class="services-list"><span>sports fields</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><img class="star"
+                src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-45.png?v=1693998233047"><br><span class="reviewTitle">COZY ONE-BEDROOM APARTMENT IN THE HEART OF ROME.</span> Unique, centrally located
+              apartment, tastefully decorated. Immersed in the city’s charm, the flat has a balcony to soak in the
+              vibrant
+              atmosphere.
+              Ideal for a memorable Roman getaway.</div>
+
+            <div class="overlayNights hidden item">
+              <div class="question" style="display: inline-block">How many nights are you staying?<br><br></div>
+              <div style="display: inline-flex">
+                <span class="nightsMinus">-</span> <span class="nightsNum">0</span> <span class="nightsPlus">+</span>
+              </div>
+            </div>
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Benefit from our amenities<br><br></div>
+              <div class="services-list"><span>towels and shampoo</span></div>
+              <div class="services-list"><span>washing machine</span></div>
+              <div class="services-list"><span>air conditioning</span></div>
+              <div class="services-list"><span>bottled water</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><img class="star"
+                src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-3.png?v=1693998230106"><br><span
+                class="reviewTitle">A COMFY COUCH IN A SHARED FLAT. </span>
+              Hi I’m Marco I’m 27, I love travelling around the world and I like to meet new people to exchange
+              perspectives. I live in a cozy
+              flat with two flatmates and we are excited to welcome you and get to know you! We can show you around the
+              city and share some tips with you.</div>
+
+            <div class="overlayNights hidden item">
+              <div class="question" style="display: inline-block">How many nights are you staying?<br><br></div>
+              <div style="display: inline-flex">
+                <span class="nightsMinus">-</span> <span class="nightsNum">0</span> <span class="nightsPlus">+</span>
+              </div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+
+        <!--  REVIEWS ACTIVITIES -->
+
+        <div grid-row="A" grid-pad="1.5" grid-gutter="3" grid-responsive="">
+          <div grid-col="2" grid-pad="1.5" class="Sidenav">EXPLORE THE SURROUNDINGS:</div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><img class="star"
+                src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-4.png?v=1693998230684"><br><span class="reviewTitle">UNFORGETTABLE EXPERIENCE
+              FROM A UNIQUE PERSPECTIVE.</span>Zip through the city’s enchanting streets and discover hidden gems on a Vespa like a real local. Rome seen like this has no
+              equal!
+            </div>
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Select your preference<br><br></div>
+              <div class="services-list"><span>guided tour</span></div>
+              <div class="services-list"><span>indipendent tour</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><span class="reviewTitle"><img class="star"
+                  src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-35.png?v=1693998232492"><br>EASY
+                AND FUN. </span>
+              Find your vehicle, jump on it and enjoy the ride. Easy as pie! Experience the future of sustainable
+              sightseeing with eco-friendly mobility.</div>
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Select your preference<br><br></div>
+              <div class="services-list"><span>E-Scooter</span></div>
+              <div class="services-list"><span>E-bike</span></div>
+              <div class="services-list"><span>Segway</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><span class="reviewTitle"><img class="star"
+                  src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-4.png?v=1693998230684"><br>GRAND
+                TOUR.</span>Unveil the secrets stories behind captivating art, architecture, and history that defined
+              Rome
+              through the centuries. Choose from a wide range of guided tours that will take you to unique routes and
+              sights that will excite and surprise even Romans.</div>
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Which era intrigues you the most?<br><br></div>
+              <div class="services-list"><span>Ancient</span></div>
+              <div class="services-list"><span>Reinassance</span></div>
+              <div class="services-list"><span>Baroque</span></div>
+              <div class="services-list"><span>Modern</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+
+        <!--  REVIEWS FOOD -->
+
+        <div grid-row="A" grid-pad="1.5" grid-gutter="3" grid-responsive="">
+          <div grid-col="2" grid-pad="1.5" class="Sidenav">TASTE THE CULTURE:</div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><span class="reviewTitle"><img class="star"
+                  src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-45.png?v=1693998233047"><br>HOMEMADE
+                PASTA.</span>
+              Indulge in heavenly spaghetti Cacio e Pepe. The great taste of Roman cousine and the warm hospitality will
+              make this dinner unforgettable!</div>
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Are you celebrating something?<br><br></div>
+              <div class="services-list"><span>Anniversary</span></div>
+              <div class="services-list"><span>Bachelor*ette Party</span></div>
+              <div class="services-list"><span>Birthday</span></div>
+              <div class="services-list"><span>None of the above</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><span class="reviewTitle"><img class="star"
+                  src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-35.png?v=1693998232492"><br>BEST
+                COFFEE.</span>Historic café and roasting house famous for its blends prepared with water from an ancient
+              Roman aqueduct. Since 1936 carries on the coffee tradition in an authentic atmosphere. </div>
+
+            <div class="overlayNights hidden item">
+              <div class="question" style="display: inline-block">SELECT YOUR PREFERENCE<br><br></div>
+              <div class="services-list"><span>CAFF&#200; AL BANCO</span></div>
+              <div class="services-list"><span>CAPPUCCINO AL TAVOLO</span></div>
+            </div>
+
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Are you celebrating something?<br><br></div>
+              <div class="services-list"><span>8.00-11.00</span></div>
+              <div class="services-list"><span>12.00-15.00</span></div>
+              <div class="services-list"><span>16:00-19.00</span></div>
+              <div class="services-list"><span>20.00-23.00</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+
+          <div grid-col="2" grid-pad="1.5" class="review">
+            <div class="reviewBody"><span class="reviewTitle"><img class="star"
+                  src="https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/star-4.png?v=1693998230684"><br>TRADITIONAL
+                CUSINE.</span>
+              Indulge in heavenly spaghetti Cacio e Pepe. The great taste of Roman cousine and the warm hospitality will
+              make this dinner unforgettable!</div>
+
+            <div class="overlayServices hidden item">
+              <div class="question" style="display: inline-block">Are you celebrating something?<br><br></div>
+              <div class="services-list"><span>Anniversary</span></div>
+              <div class="services-list"><span>Bachelor*ette Party</span></div>
+              <div class="services-list"><span>Birthday</span></div>
+              <div class="services-list"><span>None of the above</span></div>
+            </div>
+
+            <div class="reviewButton">
+              <span class="closeButton hidden">CLOSE</span>
+              <span class="proceedButton hidden">PROCEED</span>
+              <span class="deleteButton hidden">DELETE</span>
+              <span class="AddCart">ADD TO CART</span>
+            </div>
+          </div>
+
+          <br><br><br>
+        </div>
+
+      </div>
+      <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+      <footer class="footer">
+        <div grid-row="FOOT" grid-pad="3" grid-gutter="3" grid-responsive="">
+          <div grid-col="3" grid-pad="3" class="instructions">HOW TO USE THE PLATFORM:</div>
+          <div grid-col="4" grid-pad="3" class="instructions">1.SELECT YOUR TRAVEL DESTINATION
+            &#8198;&#8198;&#8198;&#8198;&#8198; 2.ADD FOUR ITEMS MIN. TO THE CART
+            &#8198;&#8198;&#8198;&#8198;&#8198;3.GO
+            TO THE CHECK OUT
+            &#8198;&#8198;&#8198;&#8198;&#8198;4.PRINT YOUR RECEIPT&#8198;&#8198;&#8198;&#8198;&#8198; 5.TAKE HOME A
+            SOUVENIR</div>
+        </div>
+      </footer>
+    </div>
+
+  <script>
+  const titolo = document.querySelector(".titolo")
+  let step = 0
+  const durata = 10
+  const timer = setInterval(function(){
+
+    if(step === 1){
+      console.log(1)
+      // titolo.textContent = "ROba Buona"
+      titolo.innerHTML = ""
+      const img = document.createElement("img")
+      img.classList.add('img-trash')
+      img.src = "https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/DolceVita-04.png?v=1694267899925"
+      titolo.appendChild(img)
+    }else if (step === 2){
+      console.log(2)
+      // titolo.textContent = "oaefh;afhuse"
+      titolo.innerHTML = ""
+      const img = document.createElement("img")
+      img.classList.add('img-trash')
+      img.src = "https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/DolceVita_05.png?v=1694274885850"
+      titolo.appendChild(img)
+    }else if(step === 3){
+      console.log(3)
+      // titolo.textContent = "husfgeh"
+      titolo.innerHTML = ""
+      const img = document.createElement("img")
+      img.classList.add('img-trash')
+      img.src = "https://cdn.glitch.global/79082873-77c5-463d-b7d0-c34ca541908b/DolceVita-05.png?v=1694177077808"
+      titolo.appendChild(img)
+    }
+
+    step++
+  }, 1000 * durata)
+    </script>
+
+    <script type="text/javascript">
+    let cursors = [];
+
+function setup() {
+//createCanvas(400, 400);
+noCanvas();
+for (let i = 0; i < 15; i++) {
+  //cursors.push(createDiv("<img src='https://tobiasahlin.com/static/cursors/default.png'>"));
+}
+
+toggleCursors(true)
+}
+
+function draw() {
+randomSeed(1)
+for (let i = 0; i < cursors.length; i++) {
+  let c = cursors[i];
+  c.position(
+    // noise movement
+    noise(i+frameCount * random(.02)) * windowWidth,
+    noise(i+frameCount * random(.02)) * windowHeight
+  );
+}
+
+// eventually trash using splice() from an array
+}
+
+function mousePressed(){
+cursors.push(createDiv "<img src='https://tobiasahlin.com/static/cursors/default.png'>");
+}
+
+function toggleCursors(mode){
+for (let i = 0; i < cursors.length; i++) {
+  let c = cursors[i];
+  if(mode){
+    c.show()
+  }else{
+    c.hide()
+  }
+}
+}
+
+    </script>
+
+    </body>
+
+</html>
